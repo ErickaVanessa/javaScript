@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom 02</title>
+    <style>
+        #area {
+            font: normal 20pt Arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<!--Modo com alterações com ações no html com funções no script -->
+
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja...
+    </div>
+
+    <script>
+        let a = window.document.getElementById('area')
+
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = 'purple'
+        }
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function sair() {
+            a.innerText = 'sair'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+
+</html>

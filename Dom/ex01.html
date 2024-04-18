@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro codigo utilizando Dom</title>
+    <style>
+        body {
+            background-color: brown;
+            color: black;
+            font: normal 16pt Arial;
+        }
+
+        p {
+            color: rgb(5, 5, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com Dom</h1>
+    <p>
+        Aprendo as primeiras funcionalidades da Dom
+    </p>
+
+    <p>minha primeira aplicação na Dom</p>
+
+    <div>
+        clique em mim
+    </div>
+
+    <script>
+        let p1 = window.document.getElementsByTagName('p')[0]//Posição do elemento por ordem começa por [0].
+        window.document.write('Esta escrito assim aqui vai o resultado: ' + p1.innerText)
+    </script>
+</body>
+
+</html>
