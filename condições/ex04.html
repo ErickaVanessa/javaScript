@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de pais </title>
+</head>
+
+<style>
+    body {
+        background-color: burlywood;
+        text-align: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <h1>Identificador de nacinalidade </h1>
+    <input type="text" name="" id="texto">
+    <input type="button" value="verificar" onclick="pais()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        // desafio realizado com sucesso / sozinha sem auxilio do professor 
+
+        function pais() {
+            let text = window.document.querySelector('input#texto')
+            let mensage = window.document.querySelector('div#res')
+            var pais = (text.value)
+
+            if (pais != "Brasil") {
+                mensage.innerHTML = "estrangeiro"
+            } else {
+                mensage.innerHTML = "brasileiro"
+            }
+
+        }
+    </script>
+</body>
+
+</html>
