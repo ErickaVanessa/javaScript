@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(107, 142, 236);
+    font: normal 15pt Arial;
+    text-align: center;
+}
+
+header{
+    color: white;
+}
+
+
+section{
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    width: 550px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.437);
+    border-radius: 10px;
+}
+
+section #foto img{
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 170px;
+}

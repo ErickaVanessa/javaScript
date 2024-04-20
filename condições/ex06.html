@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de dias da semana </title>
+    <style>
+        body {
+            background-color: palevioletred;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Qual dia da semana ?</h1>
+    <input type="button" value="verificar" onclick="dias()">
+
+    <div class="mesagem">
+
+    </div>
+
+    <script>
+        // Mais um desafio realizado com sucesso 
+
+        function dias() {
+            let mesagem = window.document.querySelector('div.mesagem')
+
+            let agora = new Date();
+            let diaSem = agora.getDay();
+
+            switch (diaSem) {
+                case 0:
+                    mesagem.innerHTML = "Domingo"
+                    break;
+                case 1:
+                    mesagem.innerHTML = "Segunda"
+                    break;
+                case 1:
+                    mesagem.innerHTML = "Terça"
+                    break;
+                case 3:
+                    mesagem.innerHTML = "Quarta"
+                    break;
+                case 4:
+                    mesagem.innerHTML = "Quinta"
+                    break;
+                case 5:
+                    mesagem.innerHTML = "Sexta"
+                    break;
+                case 6:
+                    mesagem.innerHTML = "Sabado"
+                    break;
+
+                default: {
+                    mesagem.innerHTML = "[ERRO]"
+                    break
+                }
+            }
+
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>
