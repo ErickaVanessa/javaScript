@@ -26,3 +26,9 @@ section #foto img{
     width: 200px;
     height: 170px;
 }
+
+#foto img{
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+}
