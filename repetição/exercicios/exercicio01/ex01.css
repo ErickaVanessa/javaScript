@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(107, 142, 236);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+
+section{
+    background-color: white;
+    padding-left: 15px;
+
+    padding: 10px;
+    width: 550px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.437);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+
+

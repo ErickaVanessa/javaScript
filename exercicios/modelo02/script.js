@@ -10,6 +10,7 @@ function verificador() {
     let fsex = document.getElementsByName("radsex");
     let idade = ano - Number(fano.value);
     let genero = "";
+    
     let img = document.createElement("img"); // criação da tag img no javaScript e enbaixo esta atribuindo um id
     img.setAttribute("id", "foto");
 
