@@ -14,6 +14,7 @@ function Tabuada() {
       tab.appendChild(item);
 
       c++;
+      
     }
   }
 }
